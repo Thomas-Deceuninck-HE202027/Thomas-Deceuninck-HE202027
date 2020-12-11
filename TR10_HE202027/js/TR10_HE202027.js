@@ -17,4 +17,19 @@ function jouerUnSon(){
 
 }
 
+function retireSon(){
+
+
+}
+
+function trierAlphabet(){
+
+
+}
+
+function trierDate(){
+
+    
+}
+
 
