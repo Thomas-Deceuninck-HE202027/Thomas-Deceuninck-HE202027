@@ -1,15 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <title>liste de son</title>
     <script src="js/TR10_HE202027.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/TR10_HE202027.css">
 </head>
 <body>
     <section>
+        <fieldset>
+            une bibliothèque de lien à copier est mise a disposition <a target="_blank" href="TR10_HE202027_2.html">ici</a><br>
+        </fieldset>
        <form action="#" onSubmit="return ajouterSonTabHtml(this)">
+           <div class="legend1">ajouter vos sons</div>
            <fieldset>
-               <legend>ajouter vos sons</legend>
                <label for="titre">nom du titre:</label>
                <input type="text" id="titre" name="titre" required>
                <label for="lien">emplacement du son:</label>
@@ -17,12 +21,29 @@
                <label for="raccourci">raccourci clavier:</label>
                <input type="text" id="raccourci" name="raccourci" required>
                <input type="submit" value="enregistrer le son">
-               <input type="reset">
+               <input type="reset"><br>
            </fieldset>
        </form>
+        <form id="form2" action="#" onSubmit="return valeurTri(this)">
+            <div class="legend1">Trier par...</div>
+           <fieldset>
+               <label for="Date">Tri par Date</label>
+               <input type="radio" id="Date" name="tri" value="Date"checked><br>
+               <label for="Date">Tri par Alphabet</label>
+               <input type="radio" id="Alphabet" name="tri" value="Alphabet"><br>
+               <input type="submit" value="trier">
+           </fieldset>
+       </form>
+        <form action="#" onSubmit="return retireSon(this)">
+            <div class="legend1">retirer un son</div>
+            <fieldset>
+                <label for="titre2">nom du titre:</label>
+                <input type="text" id="titre2" name="titre2" required>
+                <input type="submit" value="retirer le son">
+            </fieldset>
+        </form>
     </section>
-    <section>
+    <section id="affichage">
     </section>
-
 </body>
 </html>
