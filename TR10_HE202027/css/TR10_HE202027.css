@@ -43,4 +43,8 @@ input {
     font-size: 18px;
     font-weight: bold;
 }
-
+figcaption{
+    color: #ffcc66;
+    font-size: 18px;
+    font-weight: bold;
+}
